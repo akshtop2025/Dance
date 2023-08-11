@@ -56,7 +56,8 @@ a {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
 }
 
 .fa-solid {
@@ -114,7 +115,7 @@ a {
 
 .sec_text {
     padding: 80px 0;
-    width: 44%;
+    /* width: 44%; */
 }
 
 
@@ -125,9 +126,10 @@ a {
 
 .sec_text h1 {
     color: white;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     font-family: "oswald";
-    font-size: 85px;
+    font-size: 50px;
+    text-align: center;
     padding: 165px 0 0 0;
 
 }
@@ -136,6 +138,7 @@ a {
     font-size: 25px;
     padding: 20px 0;
     width: 95%;
+    text-align: center;
 }
 
 .sec_text .btn {
@@ -151,6 +154,17 @@ a {
     border: none;
     font-size: 20px;
     margin: 0 0 12px 46px;
+}
+
+.sec_text button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: #ffff;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
 }
 
 /* -----------------------sec_1 START------------------------ */
@@ -276,6 +290,15 @@ a {
     background-repeat: repeat;
     background-size: contain;
     background-blend-mode: luminosity;
+}
+
+.sec_3 .row {
+
+    flex-flow: wrap-reverse;
+}
+
+.sec_4 .row {
+    flex-flow: wrap;
 }
 
 .sec3_img img {
@@ -456,7 +479,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    padding: 250px 0;
+    /* padding: 250px 0; */
     margin: 0 auto;
 
 }
@@ -552,8 +575,8 @@ a {
 }
 
 .input input {
-    width: 100%;
-    padding: 5px 35px;
+    /* width: 100%; */
+    /* padding: 5px 35px; */
     color: #0000;
 }
 
@@ -575,9 +598,9 @@ a {
     color: #ffff;
 }
 
-.footer_manu {
-    padding-left: 100px;
-}
+/* .footer_manu {
+     padding-left: 100px; 
+} */
 
 .footer_text h2 {
     font-family: "Oswald";
@@ -605,7 +628,7 @@ a {
 }
 
 .footer_manu {
-    text-align: start;
+    text-align: center;
 }
 
 
@@ -664,7 +687,9 @@ a {
     .container {
         width: 540px;
     }
+
 }
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -673,15 +698,15 @@ a {
         width: 720px;
     }
 
+    #Musicology {
+        padding: 0px;
+    }
+
+
 
     .h_bg {
         background-repeat: no-repeat;
-        background-size: ;
-    }
-
-    .footer_manu {
-        /* margin: -9em !important; */
-        width: 20%;
+        /* background-size: ; */
     }
 
     .sec_5 {
@@ -768,12 +793,55 @@ a {
 
     }
 
-    .Herbert {
+    /* .Herbert {
         /* padding: 300px 0; */
-        height: 300vh;
-    }
+    /* height: 300vh; */
+}
+
+*/ .sec_text {
+    padding: 80px 0;
+    width: 44%;
+}
 
 
+.sec_text h1 {
+    letter-spacing: 10px;
+    font-size: 85px;
+    /* padding: 165px 0px 0 0; */
+    /* margin-right: 100px; */
+    display: flex;
+}
+
+.sec_text p {
+    width: 50%;
+    text-align: inherit;
+}
+
+.sec_text button {
+    margin: 0 0 12px 46px;
+}
+
+.club {
+    margin: 74px auto;
+}
+
+.subscribe {
+    padding: 250px 0;
+    margin: 0 auto;
+}
+
+
+.input {
+    width: 40%;
+}
+
+.input input {
+    width: 100%;
+    padding: 5px 35px;
+}
+
+.Herbert {
+    padding: 280px 0;
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -781,117 +849,8 @@ a {
     .container {
         width: 1300px;
     }
-}
 
-
-
-
-
-/* @media (min-width: 576px) {
-    .container {
-        width: 540px;
-    }
-
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 720px;
-    }
-
-    header {
-        background-size: cover;
-    }
-
-    .home_text h1 {
-        font-family: montserrat;
-        font-size: 100px;
-    }
-
-    .popular_text h2 {
-        font-size: 64px;
-    }
-
-    .home_text p {
-        font-size: 30px;
-    }
-
-    .box h3 {
-        font-size: 70px;
-
-    }
-
-    .col_20 {
-        width: 20%;
-    }
-
-    .col_40 {
-        width: 40%;
-    }
-
-    .col_60 {
-        width: 60%;
-    }
-
-    .col_30 {
-        width: 30%;
-    }
-
-    .col_50 {
-        width: 50%;
+    .input button {
+        width: 45%;
     }
 }
-
-@media (min-width: 992px) {
-    .container {
-        width: 960px;
-    }
-
-    .list {
-        display: block;
-        position: static;
-        background-color: transparent;
-        transition: none;
-    }
-
-
-    .list ul li {
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .list ul li a {
-        color: #fff;
-    }
-
-
-    .bar {
-        display: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-
-}
-
-@media (min-width: 1400px) {
-    .container {
-        width: 1320px;
-    }
-
-    .box {
-        padding: 50px 25px;
-
-    }
-
-    .box h5 {
-        font-size: 40px;
-    }
-
-} */
